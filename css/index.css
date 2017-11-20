@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+	overflow: hidden;
+	cursor: default;
+}
+
+header > h1 {
+	padding: 0px;
+	margin: 0px;
+}
+
+#main input {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  outline: none;
+	box-shadow: none;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+#taskList {
+	list-style: none;
+	width: 50%;
+}
+
+#taskList > li {
+	font-size: 2em;
+	padding: 10px;
+	border-top: 1px solid #515151;
+	border-left: 1px solid #515151;
+	border-right: 1px solid #515151;
+}
+#taskList > li:first-child {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#taskList > li:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom: 1px solid #515151;
+}
+
+#taskList > li .taskText {
+	width: calc(50vw - 150px);
+}
+
+#taskList > li .toggle {
+	width: 50px;
+	line-height: 43px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+#taskList > li .destroy {
+	float: right;
+	padding: 0px 10px;
+	margin: 0px;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	font-size: inherit;
+	background-color: inherit;
+}
+#taskList > li .destroy:hover {
+	background-color: #346788;
+}
+#taskList > li .destroy::after {
+	content: '✖';
+}
